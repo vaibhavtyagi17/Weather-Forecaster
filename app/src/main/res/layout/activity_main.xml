@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_background"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEATHER FORECASTER"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:letterSpacing="0.1"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3" />
+
+    <!-- Input for City -->
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#A4DDED"
+    android:hint="Enter City"
+    android:padding="16dp"
+    android:textAlignment="center"
+    android:textColor="#003366"
+    android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/cityName"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#F8F8FF"
+    android:text="Search"
+    android:textColor="#003366"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:textSize="22sp"
+        android:backgroundTint="#DDEFF6"
+        android:textColor="#003366"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+    android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowRadius="3" />
+
+    <!-- Footer Text -->
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made by Vaibhav Tyagi 22BCE10607"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+</RelativeLayout>
